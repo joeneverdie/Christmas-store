@@ -33,3 +33,15 @@ function scrollHeader() {
     else header.classList.remove('scroll-header');
 }
 window.addEventListener('scroll', scrollHeader);
+
+// Custom Swiper
+let newSwiper = new Swiper(".new-swiper" , {
+    spaceBetween: 24,
+    loop: true,
+    slidesPerView: 'auto',
+    centeredSlides: true,
+    pagination: {
+        dynamicBullets: true,
+        el: ".swiper-pagination"
+    },
+});
