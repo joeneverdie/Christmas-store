@@ -37,7 +37,7 @@
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#home" class="nav__link">Home</a>
+              <a href="#home" class="nav__link active-link">Home</a>
             </li>
             <li class="nav__item">
               <a href="#celebrate" class="nav__link">Celebrate</a>
@@ -57,8 +57,14 @@
           <img src="assets/img/nav-light.png" alt="" class="nav__img" />
         </div>
 
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="bx bx-grid-alt"></i>
+        <div class="nav__btns">
+          <!-- Theme change button -->
+          <i class="bx bx-moon change-theme" id="theme-button"></i>
+
+          <!-- Toggle button -->
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="bx bx-grid-alt"></i>
+          </div>
         </div>
       </nav>
     </header>
@@ -235,15 +241,115 @@
                 </button>
               </article>
             </div>
-            
+
             <div class="swiper-pagination"></div>
           </div>
+        </div>
+      </section>
+
+      <!-- ============ MESSAGE ============-->
+      <section class="message section container">
+        <div class="message__container grid">
+          <form action="" class="message__form">
+            <h2 class="message__title">
+              Send Good <br />
+              Wishes!
+            </h2>
+
+            <input
+              type="email"
+              placeholder="Write your message"
+              class="message__input"
+            />
+            <button class="button message__button">Send Message</button>
+          </form>
+
+          <img src="assets/img/message.png" alt="" class="message__img" />
         </div>
       </section>
     </main>
 
     <!--=============== FOOTER ===============-->
-    <footer class="footer section"></footer>
+    <footer class="footer section">
+      <div class="footer__container container grid">
+        <div>
+          <a href="#" class="footer__logo">
+            <img src="assets/img/logo.png" alt="" class="footer__logo-img" />
+            Christmas
+          </a>
+
+          <p class="footer__description">
+            This Christmas give <br />
+            a lot of love
+          </p>
+        </div>
+
+        <div>
+          <h3 class="footer__title">Our Services</h3>
+
+          <ul class="footer__links">
+            <li>
+              <a href="#" class="footer_link">Pricing</a>
+            </li>
+            <li>
+              <a href="#" class="footer_link">Discounts</a>
+            </li>
+            <li>
+              <a href="#" class="footer_link">Shipping mode</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer__title">Support</h3>
+
+          <ul class="footer__links">
+            <li>
+              <a href="#" class="footer_link">FAQs</a>
+            </li>
+            <li>
+              <a href="#" class="footer_link">Support center</a>
+            </li>
+            <li>
+              <a href="#" class="footer_link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer__title">Available On</h3>
+
+          <div class="footer__availables">
+            <img
+              src="assets/img/aviable1.png"
+              alt=""
+              class="footer__available-img"
+            />
+            <img
+              src="assets/img/aviable2.png"
+              alt=""
+              class="footer__available-img"
+            />
+          </div>
+        </div>
+
+        <img src="assets/img/footer1.png" alt="" class="footer__img1" />
+        <img src="assets/img/footer2.png" alt="" class="footer__img2" />
+      </div>
+    
+      <a href="https://github.com/joeneverdie/Christmas-store" class="footer__copyright">&#169; Joeneverdie<span >
+        , Christmas Store Prototype Website
+      </span> </a>
+
+    </footer>
+
+    <!-- ============== SCROLL UP ============= -->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="bx bx-up-arrow-alt scrollup__icon"></i>
+    </a>
+
+    <!-- ============== SCROLL REVEAL ============= -->
+    <script src="assets/js/scrollreveal.min.js"></script>
 
     <!-- ============== SWIPER JS ===============-->
     <script src="assets/js/swiper-bundle.min.js"></script>
